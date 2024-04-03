@@ -10,7 +10,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors()); // Corrected: cors should be invoked as a function
 
-mongoose.connect("mongodb://127.0.0.1:27017/Ecom2");
+// mongoose.connect("mongodb://127.0.0.1:27017/Ecom2");
 const Product = mongoose.model("product", {
   id: {
     type: Number,
