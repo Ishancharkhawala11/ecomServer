@@ -228,6 +228,11 @@ app.post("/getCart", fetchuser, async (req, res) => {
   let uData = await User.findOne({ _id: req.user.id });
   res.send(uData.CartData);
 });
+app.get("/dev",(req.res)=>
+{
+  res.send("dev")
+}
+)
 
 app.listen(PORT, (err) => {
   if (!err) {
